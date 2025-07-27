@@ -385,7 +385,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-our-work-grounding-iqa-is-released-paper-project-github-sparkles",
-          title: 'Our work Grounding-IQA is released: Paper       Project       GitHub. :sparkles:',
+          title: 'Our work Grounding-IQA is released: Paper | Project | GitHub. :sparkles:',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
