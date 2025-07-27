@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work Grounding-IQA is released: [Paper](https://arxiv.org/abs/2411.17237) | [Project](https://zheng-chen.cn/Grounding-IQA/) | [GitHub](https://github.com/zhengchen1999/Grounding-IQA). :sparkles:
+Our work Grounding-IQA is released: [Paper](https://arxiv.org/abs/2411.17237) &#124; [Project](https://zheng-chen.cn/Grounding-IQA/) &#124; [GitHub](https://github.com/zhengchen1999/Grounding-IQA). :sparkles:
