@@ -2,13 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: "Email: zhangxun04@sjtu.edu.cn"
+subtitle: "Email: zhangxun04@sjtu.edu.cn 📧"
 
 profile:
   align: right
   image: zhangxun2.jpg
   image_circular: false # crops the image to make it circular
-  image_width: 200px
 
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
