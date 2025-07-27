@@ -5,7 +5,7 @@ permalink: /
 subtitle: "Email: zhangxun04@sjtu.edu.cn"
 
 profile:
-  align: right
+  align: left
   image: zhangxun.jpg
   image_circular: false # crops the image to make it circular
 
