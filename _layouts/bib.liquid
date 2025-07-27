@@ -236,6 +236,9 @@
       {% if entry.code %}
         <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
       {% endif %}
+      {% if entry.proj %}
+        <a href="{{ entry.proj }}" class="btn btn-sm z-depth-0" role="button">PROJ</a>
+      {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
           <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
@@ -369,8 +372,5 @@
       </div>
     {% endif %}
 
-    {% if entry.proj %}
-      <a href="{{ entry.proj }}" class="btn btn-sm z-depth-0" role="button">Project</a>
-    {% endif %}
   </div>
 </div>
