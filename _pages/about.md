@@ -6,7 +6,7 @@ subtitle: "Email: zhangxun04@sjtu.edu.cn"
 
 profile:
   align: right
-  image: zhangxun1.jpg
+  image: zhangxun2.jpg
   image_circular: false # crops the image to make it circular
 
 
