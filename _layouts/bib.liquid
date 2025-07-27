@@ -368,5 +368,9 @@
         <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
       </div>
     {% endif %}
+
+    {% if entry.proj %}
+      <a href="{{ entry.proj }}" class="btn btn-sm z-depth-0" role="button">Project</a>
+    {% endif %}
   </div>
 </div>
