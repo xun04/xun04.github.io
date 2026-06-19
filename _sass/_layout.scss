@@ -89,19 +89,16 @@ body.sticky-bottom-footer {
     margin: 0;
   }
 
-  .post article .about-intro.has-profile.about-intro-ready .profile figure,
-  .post article .about-intro.has-profile.about-intro-ready .profile picture {
-    height: var(--about-text-height);
-  }
-
   .post article .about-intro.has-profile .profile img {
     display: block;
     width: auto !important;
     height: auto !important;
-    max-width: 320px;
     object-fit: contain;
   }
 
+  .post article .about-intro.has-profile.about-intro-ready .profile,
+  .post article .about-intro.has-profile.about-intro-ready .profile figure,
+  .post article .about-intro.has-profile.about-intro-ready .profile picture,
   .post article .about-intro.has-profile.about-intro-ready .profile img {
     height: var(--about-text-height) !important;
   }
