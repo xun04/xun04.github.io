@@ -35,37 +35,77 @@ body.sticky-bottom-footer {
 .profile {
   img {
     width: 100%;
+    height: auto;
   }
 }
 
-.post article .profile {
-  margin-top: 0;
-  margin-bottom: 1rem;
+// About page intro: keep the profile photo aligned with the full height
+// of the text block, without stretching the image.
+.post article .about-intro {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
 
+.post article .about-intro .post-header {
+  margin-bottom: 1.5rem;
+}
+
+.post article .about-intro .profile {
   figure {
     margin: 0;
-  }
-
-  &.float-right {
-    margin-left: 2rem;
-  }
-
-  &.float-left {
-    margin-right: 2rem;
   }
 }
 
 @media (min-width: 576px) {
-  .post article .profile {
-    width: 24%;
-    min-width: 220px;
-    max-width: 280px;
+  .post article .about-intro.has-profile {
+    padding-right: 300px;
+  }
+
+  .post article .about-intro.has-profile .profile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    float: none !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    width: auto;
+    min-width: 0;
+    max-width: 260px;
+    margin: 0;
+  }
+
+  .post article .about-intro.has-profile .profile.float-right,
+  .post article .about-intro.has-profile .profile.float-left {
+    margin: 0;
+  }
+
+  .post article .about-intro.has-profile .profile figure,
+  .post article .about-intro.has-profile .profile picture {
+    display: block;
+    height: 100%;
+    margin: 0;
+  }
+
+  .post article .about-intro.has-profile .profile img {
+    display: block;
+    width: auto !important;
+    height: 100% !important;
+    max-width: 260px;
+    max-height: 100%;
+    object-fit: contain;
   }
 }
 
 @media (max-width: 575.98px) {
-  .post article .profile {
+  .post article .about-intro.has-profile {
+    padding-right: 0;
+  }
+
+  .post article .about-intro.has-profile .profile {
     float: none !important;
+    position: static;
     max-width: 220px;
     margin: 0 auto 1rem;
   }
