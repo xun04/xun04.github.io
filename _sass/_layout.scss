@@ -118,9 +118,13 @@ body.sticky-bottom-footer {
   }
 }
 
-// Add a little more breathing room between the News list and the next section.
-.post article .news + h2 {
-  margin-top: 2.5rem;
+// Add reliable breathing room between the News scroll window and Selected Publications.
+.post article .news {
+  margin-bottom: 2rem;
+}
+
+.post article h2.selected-publications-heading {
+  margin-top: 3rem !important;
 }
 
 // TODO: redefine content layout.
