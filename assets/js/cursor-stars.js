@@ -1,4 +1,7 @@
 (function () {
+  if (window.__cursorStarsLoaded) return;
+  window.__cursorStarsLoaded = true;
+
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
 
