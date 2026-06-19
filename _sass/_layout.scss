@@ -38,6 +38,39 @@ body.sticky-bottom-footer {
   }
 }
 
+.post article .profile {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  figure {
+    margin: 0;
+  }
+
+  &.float-right {
+    margin-left: 2rem;
+  }
+
+  &.float-left {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .post article .profile {
+    width: 24%;
+    min-width: 220px;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .post article .profile {
+    float: none !important;
+    max-width: 220px;
+    margin: 0 auto 1rem;
+  }
+}
+
 // TODO: redefine content layout.
 
 /******************************************************************************
