@@ -39,8 +39,8 @@ body.sticky-bottom-footer {
   }
 }
 
-// About page intro: align the profile photo with the text block and keep
-// the photo scaled proportionally.
+// About page intro: place the profile photo next to the full intro text block
+// and scale the photo proportionally to the text block height.
 .post article .about-intro {
   margin-bottom: 1.5rem;
 }
@@ -93,6 +93,7 @@ body.sticky-bottom-footer {
     display: block;
     width: auto !important;
     height: auto !important;
+    max-width: none !important;
     object-fit: contain;
   }
 
@@ -124,7 +125,7 @@ body.sticky-bottom-footer {
  * Publications
  ******************************************************************************/
 
-// TODO: redefine publications layout.
+// TODO: redefine content layout.
 
 /*****************************************************************************
 * Projects
