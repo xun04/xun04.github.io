@@ -117,6 +117,11 @@ body.sticky-bottom-footer {
   }
 }
 
+// Add a little more breathing room between the News list and the next section.
+.post article .news + h2 {
+  margin-top: 2.5rem;
+}
+
 // TODO: redefine content layout.
 
 /******************************************************************************
