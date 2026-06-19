@@ -76,7 +76,8 @@ body.sticky-bottom-footer {
     float: none !important;
     width: auto;
     max-width: none;
-    min-height: 0;
+    height: 0;
+    min-height: 100%;
     margin: 0;
   }
 
@@ -89,7 +90,7 @@ body.sticky-bottom-footer {
   .post article .about-intro.has-profile .profile picture {
     display: flex;
     height: 100%;
-    min-height: 0;
+    min-height: 100%;
     margin: 0;
   }
 
@@ -98,7 +99,7 @@ body.sticky-bottom-footer {
     width: auto !important;
     height: 100% !important;
     max-width: none !important;
-    max-height: 100%;
+    max-height: none !important;
     object-fit: contain;
   }
 }
