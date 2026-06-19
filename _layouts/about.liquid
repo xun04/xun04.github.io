@@ -43,47 +43,6 @@ layout: default
       {% endif %}
     </div>
 
-    <script>
-      (function () {
-        const syncAboutIntro = () => {
-          const intro = document.querySelector('.about-intro.has-profile');
-          if (!intro) return;
-
-          const text = intro.querySelector('.about-text');
-          if (!text) return;
-
-          if (window.matchMedia('(min-width: 576px)').matches) {
-            intro.style.setProperty('--about-text-height', `${text.offsetHeight}px`);
-            intro.classList.add('about-intro-ready');
-          } else {
-            intro.style.removeProperty('--about-text-height');
-            intro.classList.remove('about-intro-ready');
-          }
-        };
-
-        document.addEventListener('DOMContentLoaded', () => {
-          const intro = document.querySelector('.about-intro.has-profile');
-          const text = intro && intro.querySelector('.about-text');
-          const image = intro && intro.querySelector('.profile img');
-
-          syncAboutIntro();
-          window.addEventListener('resize', syncAboutIntro);
-
-          if (window.ResizeObserver && text) {
-            new ResizeObserver(syncAboutIntro).observe(text);
-          }
-
-          if (document.fonts) {
-            document.fonts.ready.then(syncAboutIntro);
-          }
-
-          if (image && !image.complete) {
-            image.addEventListener('load', syncAboutIntro, { once: true });
-          }
-        });
-      })();
-    </script>
-
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
