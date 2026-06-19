@@ -39,8 +39,8 @@ body.sticky-bottom-footer {
   }
 }
 
-// About page intro: put the profile photo on the left of the text block,
-// keep the top and bottom aligned, and scale the photo proportionally.
+// About page intro: align the profile photo with the text block and keep
+// the photo scaled proportionally.
 .post article .about-intro {
   margin-bottom: 1.5rem;
 }
@@ -59,8 +59,8 @@ body.sticky-bottom-footer {
   .post article .about-intro.has-profile {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
-    column-gap: 1.25rem;
-    align-items: stretch;
+    column-gap: 1.75rem;
+    align-items: start;
   }
 
   .post article .about-intro.has-profile .about-text {
@@ -72,12 +72,8 @@ body.sticky-bottom-footer {
     grid-column: 1;
     grid-row: 1;
     float: none !important;
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
     width: auto;
-    min-width: 0;
-    max-width: 260px;
+    max-width: none;
     margin: 0;
   }
 
@@ -89,17 +85,25 @@ body.sticky-bottom-footer {
   .post article .about-intro.has-profile .profile figure,
   .post article .about-intro.has-profile .profile picture {
     display: block;
-    height: 100%;
+    height: auto;
     margin: 0;
+  }
+
+  .post article .about-intro.has-profile.about-intro-ready .profile figure,
+  .post article .about-intro.has-profile.about-intro-ready .profile picture {
+    height: var(--about-text-height);
   }
 
   .post article .about-intro.has-profile .profile img {
     display: block;
     width: auto !important;
-    height: 100% !important;
-    max-width: 260px;
-    max-height: 100%;
+    height: auto !important;
+    max-width: 320px;
     object-fit: contain;
+  }
+
+  .post article .about-intro.has-profile.about-intro-ready .profile img {
+    height: var(--about-text-height) !important;
   }
 }
 
