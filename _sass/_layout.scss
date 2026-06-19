@@ -118,6 +118,11 @@ body.sticky-bottom-footer {
   }
 }
 
+// Add a little more breathing room between the About intro and the News heading.
+.post article .about-intro + h2 {
+  margin-top: 2.25rem;
+}
+
 // Add reliable breathing room between the News scroll window and Selected Publications.
 .post article .news {
   margin-bottom: 2rem;
